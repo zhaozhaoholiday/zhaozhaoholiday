@@ -1,5 +1,5 @@
 window.onload = function(){
-	
+	//利用util.js封装的$()函数获取元素
 	var oPre = $("#pre");
 	var oNext = $("#next");
 	var oUl = $('#picList');
@@ -25,7 +25,6 @@ window.onload = function(){
 	};
 	//下面两个函数，判定左右边界值
 	function judgeBorder1(){
-
 		if(oUl.offsetLeft<-505*picNum){
 			oUl.style.left = '-505px';
 		}
@@ -71,9 +70,9 @@ window.onload = function(){
 				clearInterval(timer1);
 				isMoving = false;
 			 }
-		},20);
-		
+		},20);	
 	}
+	//点击右键
 	function rightArrow(){
 		if (isMoving==true) {return;};
 		judgeBorder1();
@@ -85,6 +84,7 @@ window.onload = function(){
 		showBtn();
 		showSmallPic();
 	}
+	//点击左键
 	function leftArrow(){
 		if (isMoving==true) {return;};
 		judgeBorder2();
@@ -108,7 +108,7 @@ window.onload = function(){
 		 };
 		 arr[index-1].style.background = newCol;	
 	}
-	//变小加点的颜色
+	//变小圆点的颜色
 	function showBtn(){
 		show(aBtn, "black", "rgb(117,184,107)");
 	}
