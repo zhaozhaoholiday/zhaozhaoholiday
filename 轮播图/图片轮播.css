@@ -1,0 +1,170 @@
+       *{
+			margin: 0px;
+			padding: 0px;
+		}
+		body{
+			padding: 20px;
+			height: 500px;
+			width: 60%;
+			margin: 20px auto;
+			border-radius: 20px;
+			box-shadow: 5px 5px 5px 0px #ccc,-5px -5px 5px 0px #ccc;
+		}
+		header{
+			font:italic bold 40px "Times New Roman";
+			color: rgba(212,93,92,0.7);
+		}
+		ul{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		/*ie下a嵌套img，img自带边框*/
+		a img{
+			border: 0 none;
+		}
+		#top-nav{
+			width: 100%;
+			margin:20px auto;
+			border: 1px solid #222;
+			background-color: rgba(212,93,92,1);
+			background-image: -webkit-gradient(linear,left top,left bottom, from(rgba(240,120,120,1)),to(rgba(212,93,92,0.5)));
+			background-image: -webkit-linear-gradient(top, rgba(240,120,120,1), rgba(212,93,92,0.5));
+			background-image: -ms-linear-gradient(top, rgba(240,120,120,1), rgba(212,93,92,0.5));
+			background-image: -moz-linear-gradient(top, rgba(240,120,120,1), rgba(212,93,92,0.5));
+			background-image: -o-linear-gradient(top, rgba(240,120,120,1), rgba(212,93,92,0.5));
+			background-image: linear-gradient(top,rgba(240,120,120,1),rgba(212,93,92,0.5));
+			border-radius: 6px;
+			box-shadow: 0 2px 1px #aaa;
+			padding: 0;
+			overflow: hidden;
+		}
+		#top-nav li{
+			float: left;
+			border-right: 1px solid #aaa;
+		}
+		#top-nav li a{
+			float: left;
+			padding: 10px 30px;
+			font: bold 12px; 
+			color: #fff;
+		}
+		#top-nav li a:hover{
+			color: black;
+		}
+		#lunbo1{
+			width: 505px;
+			height: 337px;	
+			position: relative;
+			overflow: hidden;
+			float: left;
+		}
+		#picList{
+			/*width: 2525px;*/
+			height: 337px;
+			position: absolute;	
+			left: -505px;
+
+		}
+		#picList li{
+			float: left;	
+		}
+		#spot span{
+			border: 1px solid white;
+			width: 7px;
+			height: 7px;
+			background-color: black;
+			display: inline-block;
+			border-radius: 100%;
+		}
+		#spot{
+			cursor: pointer;
+			position: absolute;
+			left: 250px;
+			bottom: 10px;
+		}
+		#lunbo1 .arrow{
+			display: inline-block;
+			height: 50px;
+			width: 50px;
+			background: rgba(0,0,0,0.3);
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 50px;
+			color: black;
+			position: absolute;
+			top: 150px;
+		}
+		#lunbo1 .arrow:hover{
+			background: rgba(0,0,0,0.7);
+			color: #fff;
+		}
+		#pre{
+			left: 0px;
+		}
+		#next{
+			right: 0px;
+		}
+		#lunbo2{
+			float: left;
+			margin-left: 10px;
+		}
+		#lunbo2 a{
+			display: block;
+			margin-top: 25px;
+			position: relative;
+		}
+		.smallPic .override{
+			display: block;
+			width: 77px;
+			height: 54px;
+			background: rgba(0,0,0,0.4);
+			position: absolute;
+			left: 0px;
+			top: 0px;
+		}
+		#tip{
+			float: right;
+			font: bold 20px "楷体";
+			box-shadow: 0 1px 4px rgba(0,0,0,.5) inset;
+			padding: 2px;
+			background-color: #e5a1a0;
+			background-image: -webkit-gradient(linear,left top,left bottom, from(#e5a1a0),to(#c38080));
+			background-image: -webkit-linear-gradient(top, #e5a1a0, #c38080);
+			background-image: -ms-linear-gradient(top, #e5a1a0, #c38080);
+			background-image: -moz-linear-gradient(top, #e5a1a0, #c38080);
+			background-image: -o-linear-gradient(top, #e5a1a0, #c38080);
+			background-image: linear-gradient(top, #e5a1a0, #c38080);
+
+			border-radius: 3px;
+			text-shadow:0 3px 0 rgba(0,0,0,.3);
+			box-shadow: 0 1px 0 rgba(255,255,255,0.3) inset, 0 1px 0 #fff;
+		}
+		#tip:active{
+			box-shadow: 0 1px 4px rgba(0,0,0,.5) inset;
+		}
+		#tip:hover{
+			cursor: pointer;
+			background: rgba(224,103,103,.8);
+		}
+		#pic{
+			position: relative;
+		}
+		#hide{
+			position: absolute;
+			right: 60px;
+			top:100px;
+			width: 100px;
+			height: 100px;
+			background: rgba(241,193,161,0.8);
+			border-radius: 100%;
+			display: none;
+
+		}
+		#hide span{
+			position: absolute;
+			top: 40%;
+			left: 20%;
+		}
