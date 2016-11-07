@@ -1,3 +1,4 @@
+//工具包
 function $(s){
 	var s1 = s.slice(0,1);
 	var s2 = s.slice(1);
@@ -9,8 +10,7 @@ function $(s){
 		return getElementsByClassname(s2);
 	}else{
 		return;
-	}
-	
+	}	
 }
 //IE8及以下的不支持document.getElementsByClassName()
 function getElementsByClassname(s2){
