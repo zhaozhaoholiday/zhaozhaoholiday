@@ -59,13 +59,11 @@
 			position: relative;
 			overflow: hidden;
 			float: left;
-			border: 1px solid red;
 		}
 		#picList{
 			/*width: 2525px;*/
 			height: 337px;
 			position: absolute;	
-			left: -505px;
 
 		}
 		#picList li{
@@ -75,15 +73,16 @@
 			border: 1px solid white;
 			width: 7px;
 			height: 7px;
-			background-color: black;
 			display: inline-block;
 			border-radius: 100%;
 		}
 		#spot{
-			cursor: pointer;
 			position: absolute;
 			left: 250px;
 			bottom: 10px;
+		}
+		#spot .btn{
+			cursor: pointer;
 		}
 		#lunbo1 .arrow{
 			display: inline-block;
@@ -168,4 +167,7 @@
 			position: absolute;
 			top: 40%;
 			left: 20%;
+		}
+		.on{
+			background: orange;
 		}
